@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 from pydantic import BaseModel
 from favoriot import get_favoriot, post_favoriot
-from sensors_input import get_temperature
+from sensors_input import get_temperature, get_humidity, get_sound, get_light, get_movement, get_airquality
 from class_iot import Payload
 
 load_dotenv()
@@ -18,10 +18,11 @@ STREAM_DEVELOPER_ID=os.environ.get("STREAM_DEVELOPER_ID")
         
 payload=Payload(
     temperature=get_temperature(),
-    humidity=get_temperature(),
-    sound=get_temperature(),
-    light=get_temperature(),
-    movement=get_temperature()
+    humidity=get_humidity(),
+    sound=get_sound(),
+    light=get_light(),
+    movement=get_movement(),
+    airquality=get_airquality()
 )
 
 print(payload.model_dump_json())

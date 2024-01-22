@@ -6,6 +6,7 @@ class Payload(BaseModel):
     sound : float
     light : float
     movement : float
+    airquality: float
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, 

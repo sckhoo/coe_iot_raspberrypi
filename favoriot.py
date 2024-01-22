@@ -20,7 +20,8 @@ def post_favoriot(payload):
             "humidity":payload.humidity,
             "sound":payload.sound,
             "light":payload.light,
-            "movement":payload.movement
+            "movement":payload.movement,
+            "airquality":payload.airquality
             }
         })
     headers = {
