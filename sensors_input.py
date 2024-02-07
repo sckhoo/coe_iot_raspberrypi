@@ -1,17 +1,19 @@
+import random
+
 def get_temperature():
-    return 28.05
+    return round(random.uniform(22,26), 2)
 
 def get_humidity():
-    return 55.00
+    return round(random.uniform(48,55), 2)
 
 def get_sound():
-    return 20.59
+    return round(random.uniform(20,26), 2)
 
 def get_light():
-    return 85.22
+    return round(random.uniform(70,85), 2)
 
 def get_movement():
-    return 1.00
+    return round(random.uniform(0,10), 2)
 
 def get_airquality():
-    return 75.00
+    return round(random.uniform(10,20), 2)
