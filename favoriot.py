@@ -16,6 +16,7 @@ def post_favoriot(payload):
     payload = json.dumps({
         "device_developer_id": DEVICE_DEVELOPER_ID,
         "data": {
+            "source":payload.source,
             "temperature":payload.temperature,
             "humidity":payload.humidity,
             "sound":payload.sound,

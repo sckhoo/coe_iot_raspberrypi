@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 class Payload(BaseModel):
-    location : str
+    source : str
     temperature : float
     humidity : float
     sound : float

@@ -14,11 +14,11 @@ FAVORIOT_URL_STREAM=os.environ.get("FAVORIOT_URL_STREAM")
 FAVORIOT_APIKEY=os.environ.get("FAVORIOT_APIKEY")
 DEVICE_DEVELOPER_ID=os.environ.get("DEVICE_DEVELOPER_ID")
 STREAM_DEVELOPER_ID=os.environ.get("STREAM_DEVELOPER_ID")
-LOCATION=os.environ.get("LOCATION")
+SOURCE=os.environ.get("SOURCE")
 
         
 payload=Payload(
-    location=LOCATION,
+    source=SOURCE,
     temperature=get_temperature(),
     humidity=get_humidity(),
     sound=get_sound(),
