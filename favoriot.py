@@ -22,7 +22,8 @@ def post_favoriot(payload):
             "sound":payload.sound,
             "light":payload.light,
             "movement":payload.movement,
-            "airquality":payload.airquality
+            "airquality":payload.airquality,
+            "ip_address":payload.interface_ip
             }
         })
     headers = {

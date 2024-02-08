@@ -7,6 +7,7 @@ from pydantic import BaseModel
 from favoriot import get_favoriot, post_favoriot
 from sensors_input import get_temperature, get_humidity, get_sound, get_light, get_movement, get_airquality
 from class_iot import Payload
+from get_ip import get_ip_address
 
 load_dotenv()
 FAVORIOT_URL=os.environ.get("FAVORIOT_URL")
@@ -24,7 +25,8 @@ payload=Payload(
     sound=get_sound(),
     light=get_light(),
     movement=get_movement(),
-    airquality=get_airquality()
+    airquality=get_airquality(),
+    interface_ip=get_ip_address()
 )
 
 print(payload.model_dump_json())

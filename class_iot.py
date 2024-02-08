@@ -8,6 +8,7 @@ class Payload(BaseModel):
     light : float
     movement : float
     airquality: float
+    interface_ip: str
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, 
