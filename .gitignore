@@ -1,1 +1,4 @@
 .env
+*.json
+process_panda.py
+test.py
