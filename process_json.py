@@ -27,7 +27,8 @@ def process_json(data):
                 print(i['timestamp'])
     print(f'Total data in {infile} is {count}')
 
-input_files = ['09feb2024.json', '10feb2024.json', '11feb2024.json', '12feb2024.json', '13feb2024.json', '14feb2024.json']
+#input_files = ['09feb2024.json', '10feb2024.json', '11feb2024.json', '12feb2024.json', '13feb2024.json', '14feb2024.json']
+input_files = ['15feb2024.json']
 
 local_tz = pytz.timezone("Asia/Kuala_Lumpur")
 
